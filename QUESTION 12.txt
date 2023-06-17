@@ -1,0 +1,13 @@
+
+
+
+QUESTION NO 12:
+
+
+void main() {
+  double celsius = 28;
+
+  double fahrenheit = (celsius * 9/5) + 32;
+
+  print("$celsius degrees Celsius is equal to $fahrenheit degrees Fahrenheit.");
+}

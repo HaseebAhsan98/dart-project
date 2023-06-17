@@ -1,0 +1,42 @@
+
+
+QUESTION NO 8:
+
+
+
+
+void main() {
+  String studentName = "abdullah";
+  int rollNumber = 78;
+  String className = "Grade 10";
+  
+  int subject1Marks = 85;
+  int subject2Marks = 92;
+  int subject3Marks = 78;
+  int subject4Marks = 88;
+  int subject5Marks = 90;
+
+  int totalMarks = subject1Marks + subject2Marks + subject3Marks + subject4Marks + subject5Marks;
+  double percentage = (totalMarks / 500) * 100;
+  String grade = '';
+
+  if (percentage >= 90) {
+    grade = 'A+';
+  } else if (percentage >= 80) {
+    grade = 'A';
+  } else if (percentage >= 70) {
+    grade = 'B';
+  } else if (percentage >= 60) {
+    grade = 'C';
+  } else if (percentage >= 50) {
+    grade = 'D';
+  } else {
+    grade = 'F';
+  }
+
+  print("Student Name: $studentName");
+  print("Roll Number: $rollNumber");
+  print("Class: $className");
+  print("Percentage: ${percentage.toStringAsFixed(2)}%");
+  print("Grade Obtained: $grade");
+}

@@ -1,0 +1,30 @@
+
+QUESTION NO 7:
+
+
+
+void main() {
+  int customerId = 47;
+  String customerName = "ahmed";
+  int unitsConsumed = 800;
+  double chargePerUnit = 0.0;
+  double billAmount = 0.0;
+
+  if (unitsConsumed <= 199) {
+    chargePerUnit = 1.20;
+  } else if (unitsConsumed >= 200 && unitsConsumed < 400) {
+    chargePerUnit = 1.50;
+  } else if (unitsConsumed >= 400 && unitsConsumed < 600) {
+    chargePerUnit = 1.80;
+  } else {
+    chargePerUnit = 2.00;
+  }
+
+  billAmount = unitsConsumed * chargePerUnit;
+
+  print("Customer IDNO: $customerId");
+  print("Customer Name: $customerName");
+  print("Units Consumed: $unitsConsumed");
+  print("Amount Charges @Rs. $chargePerUnit per unit: $billAmount");
+  print("Net Bill Amount: $billAmount");
+}
